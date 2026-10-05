@@ -1,0 +1,14 @@
+{
+  "week_ending": "2026-09-04",
+  "audience": "sdk-maintainers",
+  "builds": [
+    {"project": "python-sdk", "status": "failed", "revision": "a12bc34"},
+    {"project": "dev-cli", "status": "passed", "revision": "d56ef78"}
+  ],
+  "releases": [
+    {"package": "dev-cli", "version": "2.4.0", "channel": "stable"}
+  ],
+  "diagnostics": [
+    {"tool": "typecheck", "severity": "warning", "message": "2 slow modules"}
+  ]
+}

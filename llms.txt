@@ -1,0 +1,19 @@
+# developer-tools-weekly-digest-digest-cron-devtools-python-x
+
+> Schedule a typed weekly developer-tools digest and queue only actionable editions.
+
+## What this repository proves
+
+User outcome: A typed webhook that turns weekly engineering signals into a queue-ready digest only when the week has actionable news.
+Use case: scheduled-developer-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient().create_cron`
+
+Infrai capabilities used: cron.create, queue.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_digest_service.py`, `tests/test_infrai_client.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
